@@ -1,14 +1,102 @@
+
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pardeep CSC</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PARDEEP CSC | Digital Services</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f3f6fb;color:#1b2940}
+header{background:#102e59;color:white;padding:24px 16px;text-align:center}
+header h1{margin:0;font-size:30px}
+header p{margin:9px 0 0}
+nav{background:#fff;padding:13px;display:flex;gap:16px;overflow-x:auto;white-space:nowrap;box-shadow:0 2px 8px #0001}
+nav a{color:#123c70;text-decoration:none;font-weight:bold}
+.hero{background:linear-gradient(120deg,#1559a5,#12a5bb);color:white;padding:38px 20px;text-align:center}
+.hero h2{font-size:27px;margin:0 0 12px}
+.hero p{line-height:1.7}
+.container{max-width:1000px;margin:auto;padding:22px 14px}
+h2.section-title{text-align:center;color:#123c70}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:14px}
+.card{background:white;border-radius:14px;padding:19px 13px;text-align:center;box-shadow:0 4px 14px #172b4d12}
+.card .emoji{font-size:36px}
+.card h3{font-size:17px;color:#123c70}
+.card p{font-size:14px;line-height:1.6}
+.btn{display:inline-block;background:#1268bb;color:white;padding:11px 15px;border-radius:8px;text-decoration:none;font-weight:bold}
+.contact{background:#e5f5eb;text-align:center;border-radius:14px;padding:25px}
+footer{background:#102e59;color:white;text-align:center;padding:22px;line-height:1.8}
+</style>
 </head>
-<body style="font-family:Arial;text-align:center;background:#f0f8ff;padding:30px;">
-  <h1>Welcome to Pardeep CSC</h1>
-  <p>आपकी अपनी वेबसाइट में आपका स्वागत है!</p>
-  <h3>Online Services</h3>
-  <p>हमारी सेवाओं की जानकारी यहाँ मिलेगी।</p>
+<body>
+<header>
+<h1>PARDEEP CSC</h1>
+<p>आपकी डिजिटल सेवाओं का विश्वसनीय केंद्र</p>
+</header>
+<nav>
+<a href="#services">हमारी सेवाएँ</a>
+<a href="#jobs">सरकारी नौकरी</a>
+<a href="#yojana">सरकारी योजनाएँ</a>
+<a href="#igu">IGU यूनिवर्सिटी</a>
+<a href="#documents">दस्तावेज़</a>
+<a href="#contact">संपर्क</a>
+</nav>
+<section class="hero">
+<h2>सभी ऑनलाइन सेवाएँ, एक ही जगह!</h2>
+<p>सरकारी फॉर्म • योजनाएँ • यूनिवर्सिटी • ID एवं दस्तावेज़</p>
+<a class="btn" style="background:#087b45" href="https://wa.me/916375878779">WhatsApp पर संपर्क करें</a>
+</section>
+<main class="container" id="services">
+<h2 class="section-title">हमारी सेवाएँ</h2>
+<div class="grid">
+<div class="card" id="jobs">
+<div class="emoji">💼</div>
+<h3>सरकारी नौकरी ऑनलाइन</h3>
+<p>भर्ती सूचना और ऑनलाइन आवेदन संबंधी सहायता।</p>
+<a class="btn" href="https://www.hssc.gov.in/">भर्ती देखें</a>
+</div>
+<div class="card">
+<div class="emoji">📄</div>
+<h3>सरकारी नौकरी ऑफलाइन</h3>
+<p>ऑफलाइन आवेदन और दस्तावेज़ संबंधी सहायता।</p>
+<a class="btn" href="https://wa.me/916375878779">जानकारी लें</a>
+</div>
+<div class="card" id="yojana">
+<div class="emoji">🏛️</div>
+<h3>सरकारी योजनाएँ</h3>
+<p>पात्रता, जरूरी दस्तावेज़ और आवेदन की जानकारी।</p>
+<a class="btn" href="https://www.myscheme.gov.in/">योजनाएँ देखें</a>
+</div>
+<div class="card" id="igu">
+<div class="emoji">🎓</div>
+<h3>IGU यूनिवर्सिटी</h3>
+<p>एडमिशन, फीस और विश्वविद्यालय संबंधी सहायता।</p>
+<a class="btn" href="https://igu.ac.in/">विश्वविद्यालय खोलें</a>
+</div>
+<div class="card" id="documents">
+<div class="emoji">🪪</div>
+<h3>सरकारी ID एवं दस्तावेज़</h3>
+<p>आवेदन, प्रमाणपत्र और दस्तावेज़ संबंधी सहायता।</p>
+<a class="btn" href="https://uidai.gov.in/">Aadhaar सेवाएँ</a>
+</div>
+<div class="card">
+<div class="emoji">📸</div>
+<h3>फोटो एवं अन्य सेवाएँ</h3>
+<p>फोटो, फॉर्म और अन्य डिजिटल सेवाओं के लिए संपर्क करें।</p>
+<a class="btn" href="https://wa.me/916375878779">संपर्क करें</a>
+</div>
+</div>
+<section class="contact" id="contact" style="margin-top:25px">
+<h2>हमसे संपर्क करें</h2>
+<p><strong>PARDEEP CSC</strong></p>
+<p>मोबाइल: 6375878779</p>
+<a class="btn" style="background:#128c52" href="https://wa.me/916375878779">WhatsApp करें</a>
+</section>
+</main>
+<footer>
+<strong>PARDEEP CSC</strong><br>
+आपकी सेवा में सदैव तत्पर<br>
+© 2026 PARDEEP CSC
+</footer>
 </body>
 </html>
