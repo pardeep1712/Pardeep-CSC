@@ -1,102 +1,492 @@
+HTML
 
 <!DOCTYPE html>
 <html lang="hi">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PARDEEP CSC | Digital Services</title>
+
+<title>PARDEEP CSC | सभी डिजिटल सेवाएँ</title>
+<meta name="description" content="PARDEEP CSC पर आधार, PAN, आयुष्मान कार्ड, राशन कार्ड, पासपोर्ट, सरकारी योजनाएँ और ऑनलाइन सेवाओं की जानकारी प्राप्त करें।">
+
 <style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;background:#f3f6fb;color:#1b2940}
-header{background:#102e59;color:white;padding:24px 16px;text-align:center}
-header h1{margin:0;font-size:30px}
-header p{margin:9px 0 0}
-nav{background:#fff;padding:13px;display:flex;gap:16px;overflow-x:auto;white-space:nowrap;box-shadow:0 2px 8px #0001}
-nav a{color:#123c70;text-decoration:none;font-weight:bold}
-.hero{background:linear-gradient(120deg,#1559a5,#12a5bb);color:white;padding:38px 20px;text-align:center}
-.hero h2{font-size:27px;margin:0 0 12px}
-.hero p{line-height:1.7}
-.container{max-width:1000px;margin:auto;padding:22px 14px}
-h2.section-title{text-align:center;color:#123c70}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:14px}
-.card{background:white;border-radius:14px;padding:19px 13px;text-align:center;box-shadow:0 4px 14px #172b4d12}
-.card .emoji{font-size:36px}
-.card h3{font-size:17px;color:#123c70}
-.card p{font-size:14px;line-height:1.6}
-.btn{display:inline-block;background:#1268bb;color:white;padding:11px 15px;border-radius:8px;text-decoration:none;font-weight:bold}
-.contact{background:#e5f5eb;text-align:center;border-radius:14px;padding:25px}
-footer{background:#102e59;color:white;text-align:center;padding:22px;line-height:1.8}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, "Noto Sans Devanagari", sans-serif;
+  background: #f3f7fc;
+  color: #1c2c43;
+  line-height: 1.6;
+}
+
+header {
+  background: #103766;
+  color: white;
+  text-align: center;
+  padding: 25px 15px;
+}
+
+header h1 {
+  font-size: 32px;
+  letter-spacing: 1px;
+}
+
+header p {
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+nav {
+  background: white;
+  display: flex;
+  gap: 20px;
+  padding: 14px;
+  overflow-x: auto;
+  white-space: nowrap;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 8px #00000012;
+}
+
+nav a {
+  color: #103766;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #087dba;
+}
+
+.hero {
+  background: linear-gradient(125deg, #1259a5, #0aa5b9);
+  color: white;
+  padding: 48px 18px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  margin: 10px 0 22px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 28px 15px;
+}
+
+.section-title {
+  color: #103766;
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 22px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit, minmax(210px, 1fr)
+  );
+  gap: 17px;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 22px 16px;
+  text-align: center;
+  box-shadow: 0 4px 15px #17395e12;
+  border: 1px solid #e7eef7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.emoji {
+  font-size: 42px;
+  margin-bottom: 8px;
+}
+
+.card h3 {
+  color: #103766;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #4a596d;
+  margin-bottom: 17px;
+  flex-grow: 1;
+}
+
+.btn {
+  display: inline-block;
+  background: #1268bb;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn:hover {
+  background: #0d4e91;
+}
+
+.whatsapp {
+  background: #087e45;
+}
+
+.whatsapp:hover {
+  background: #066638;
+}
+
+.hero .btn {
+  padding: 12px 20px;
+  font-size: 16px;
+}
+
+.notice {
+  background: #e8f3ff;
+  border-left: 4px solid #1268bb;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 22px;
+  font-size: 14px;
+}
+
+.contact {
+  background: white;
+  border-radius: 15px;
+  text-align: center;
+  padding: 28px 16px;
+  box-shadow: 0 4px 15px #17395e12;
+}
+
+.contact p {
+  margin: 9px 0;
+}
+
+footer {
+  background: #103766;
+  color: white;
+  text-align: center;
+  padding: 24px 15px;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+footer a {
+  color: white;
+}
+
+.floating-wa {
+  position: fixed;
+  right: 16px;
+  bottom: 18px;
+  z-index: 20;
+  border-radius: 50px;
+  padding: 13px 16px;
+  box-shadow: 0 4px 12px #0003;
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 27px;
+  }
+
+  .hero h2 {
+    font-size: 25px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 11px;
+  }
+
+  .card {
+    padding: 17px 10px;
+  }
+
+  .card h3 {
+    font-size: 16px;
+  }
+
+  .card p {
+    font-size: 13px;
+  }
+
+  .card .btn {
+    padding: 9px 10px;
+    font-size: 13px;
+  }
+}
 </style>
 </head>
+
 <body>
+
 <header>
-<h1>PARDEEP CSC</h1>
-<p>आपकी डिजिटल सेवाओं का विश्वसनीय केंद्र</p>
+  <h1>PARDEEP CSC</h1>
+  <p>आपकी डिजिटल सेवाओं का विश्वसनीय केंद्र</p>
 </header>
+
 <nav>
-<a href="#services">हमारी सेवाएँ</a>
-<a href="#jobs">सरकारी नौकरी</a>
-<a href="#yojana">सरकारी योजनाएँ</a>
-<a href="#igu">IGU यूनिवर्सिटी</a>
-<a href="#documents">दस्तावेज़</a>
-<a href="#contact">संपर्क</a>
+  <a href="#services">हमारी सेवाएँ</a>
+  <a href="#cards">सरकारी कार्ड</a>
+  <a href="#jobs">सरकारी नौकरी</a>
+  <a href="#yojana">सरकारी योजनाएँ</a>
+  <a href="#igu">IGU यूनिवर्सिटी</a>
+  <a href="#contact">संपर्क करें</a>
 </nav>
+
 <section class="hero">
-<h2>सभी ऑनलाइन सेवाएँ, एक ही जगह!</h2>
-<p>सरकारी फॉर्म • योजनाएँ • यूनिवर्सिटी • ID एवं दस्तावेज़</p>
-<a class="btn" style="background:#087b45" href="https://wa.me/916375878779">WhatsApp पर संपर्क करें</a>
+  <h2>सभी ऑनलाइन सेवाएँ, एक ही जगह!</h2>
+  <p>
+    आधार • PAN • आयुष्मान • राशन कार्ड • पासपोर्ट
+    <br>
+    सरकारी फॉर्म • योजनाएँ • डिजिटल सेवाएँ
+  </p>
+
+  <a class="btn whatsapp"
+     href="https://wa.me/916375878779"
+     target="_blank"
+     rel="noopener">
+    WhatsApp पर संपर्क करें
+  </a>
 </section>
+
 <main class="container" id="services">
-<h2 class="section-title">हमारी सेवाएँ</h2>
-<div class="grid">
-<div class="card" id="jobs">
-<div class="emoji">💼</div>
-<h3>सरकारी नौकरी ऑनलाइन</h3>
-<p>भर्ती सूचना और ऑनलाइन आवेदन संबंधी सहायता।</p>
-<a class="btn" href="https://www.hssc.gov.in/">भर्ती देखें</a>
-</div>
-<div class="card">
-<div class="emoji">📄</div>
-<h3>सरकारी नौकरी ऑफलाइन</h3>
-<p>ऑफलाइन आवेदन और दस्तावेज़ संबंधी सहायता।</p>
-<a class="btn" href="https://wa.me/916375878779">जानकारी लें</a>
-</div>
-<div class="card" id="yojana">
-<div class="emoji">🏛️</div>
-<h3>सरकारी योजनाएँ</h3>
-<p>पात्रता, जरूरी दस्तावेज़ और आवेदन की जानकारी।</p>
-<a class="btn" href="https://www.myscheme.gov.in/">योजनाएँ देखें</a>
-</div>
-<div class="card" id="igu">
-<div class="emoji">🎓</div>
-<h3>IGU यूनिवर्सिटी</h3>
-<p>एडमिशन, फीस और विश्वविद्यालय संबंधी सहायता।</p>
-<a class="btn" href="https://igu.ac.in/">विश्वविद्यालय खोलें</a>
-</div>
-<div class="card" id="documents">
-<div class="emoji">🪪</div>
-<h3>सरकारी ID एवं दस्तावेज़</h3>
-<p>आवेदन, प्रमाणपत्र और दस्तावेज़ संबंधी सहायता।</p>
-<a class="btn" href="https://uidai.gov.in/">Aadhaar सेवाएँ</a>
-</div>
-<div class="card">
-<div class="emoji">📸</div>
-<h3>फोटो एवं अन्य सेवाएँ</h3>
-<p>फोटो, फॉर्म और अन्य डिजिटल सेवाओं के लिए संपर्क करें।</p>
-<a class="btn" href="https://wa.me/916375878779">संपर्क करें</a>
-</div>
-</div>
-<section class="contact" id="contact" style="margin-top:25px">
-<h2>हमसे संपर्क करें</h2>
-<p><strong>PARDEEP CSC</strong></p>
-<p>मोबाइल: 6375878779</p>
-<a class="btn" style="background:#128c52" href="https://wa.me/916375878779">WhatsApp करें</a>
-</section>
+
+  <div class="notice">
+    <strong>जरूरी सूचना:</strong>
+    नीचे दिए गए बटन संबंधित आधिकारिक वेबसाइटों पर ले जाते हैं।
+    आवेदन, पात्रता और फीस की जानकारी संबंधित पोर्टल पर जाँचें।
+  </div>
+
+  <section id="cards">
+    <h2 class="section-title">सरकारी कार्ड एवं दस्तावेज़</h2>
+
+    <div class="grid">
+
+      <article class="card">
+        <div class="emoji">🪪</div>
+        <h3>आधार कार्ड</h3>
+        <p>आधार संबंधी सेवाएँ, अपडेट और आधिकारिक जानकारी।</p>
+        <a class="btn" href="https://uidai.gov.in/"
+           target="_blank" rel="noopener">
+          आधार सेवाएँ
+        </a>
+      </article>
+
+      <article class="card">
+        <div class="emoji">📄</div>
+        <h3>PAN कार्ड</h3>
+        <p>PAN आवेदन, सुधार और आयकर विभाग की सेवाएँ।</p>
+        <a class="btn"
+           href="https://www.incometax.gov.in/iec/foportal/"
+           target="_blank" rel="noopener">
+          PAN जानकारी
+        </a>
+      </article>
+
+      <article class="card">
+        <div class="emoji">🏥</div>
+        <h3>आयुष्मान कार्ड</h3>
+        <p>आयुष्मान भारत योजना और लाभार्थी पोर्टल की जानकारी।</p>
+        <a class="btn"
+           href="https://beneficiary.nha.gov.in/"
+           target="_blank" rel="noopener">
+          लाभार्थी पोर्टल
+        </a>
+      </article>
+
+      <article class="card">
+        <div class="emoji">🌾</div>
+        <h3>राशन कार्ड</h3>
+        <p>हरियाणा में राशन और खाद्य आपूर्ति सेवाओं की जानकारी।</p>
+        <a class="btn"
+           href="https://epds.haryanafood.gov.in/"
+           target="_blank" rel="noopener">
+          राशन सेवाएँ
+        </a>
+      </article>
+
+      <article class="card">
+        <div class="emoji">🛂</div>
+        <h3>पासपोर्ट</h3>
+        <p>पासपोर्ट आवेदन, अपॉइंटमेंट और आधिकारिक जानकारी।</p>
+        <a class="btn"
+           href="https://www.passportindia.gov.in/"
+           target="_blank" rel="noopener">
+          पासपोर्ट सेवा
+        </a>
+      </article>
+
+      <article class="card">
+        <div class="emoji">👴</div>
+        <h3>सीनियर सिटीजन सेवाएँ</h3>
+        <p>वरिष्ठ नागरिकों की योजनाओं और प्रमाणपत्र संबंधी जानकारी।</p>
+        <a class="btn"
+           href="https://socialjusticehry.gov.in/"
+           target="_blank" rel="noopener">
+          हरियाणा सेवाएँ
+        </a>
+      </article>
+
+      <article class="card">
+        <div class="emoji">📃</div>
+        <h3>जन्म एवं मृत्यु प्रमाणपत्र</h3>
+        <p>प्रमाणपत्र और संबंधित सरकारी सेवाओं की जानकारी।</p>
+        <a class="btn"
+           href="https://services.india.gov.in/"
+           target="_blank" rel="noopener">
+          सरकारी सेवाएँ
+        </a>
+      </article>
+
+      <article class="card">
+        <div class="emoji">📷</div>
+        <h3>फोटो एवं फॉर्म</h3>
+        <p>फोटो, प्रिंटिंग, ऑनलाइन फॉर्म और डिजिटल सहायता।</p>
+        <a class="btn whatsapp"
+           href="https://wa.me/916375878779"
+           target="_blank" rel="noopener">
+          जानकारी लें
+        </a>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="jobs" style="margin-top:38px">
+    <h2 class="section-title">सरकारी नौकरी</h2>
+
+    <div class="grid">
+      <article class="card">
+        <div class="emoji">💼</div>
+        <h3>हरियाणा भर्ती</h3>
+        <p>सरकारी भर्ती और आधिकारिक नोटिफिकेशन देखें।</p>
+        <a class="btn" href="https://www.hssc.gov.in/"
+           target="_blank" rel="noopener">
+          भर्ती देखें
+        </a>
+      </article>
+
+      <article class="card">
+        <div class="emoji">📝</div>
+        <h3>ऑनलाइन आवेदन सहायता</h3>
+        <p>आवेदन और दस्तावेज़ संबंधी सहायता के लिए संपर्क करें।</p>
+        <a class="btn whatsapp"
+           href="https://wa.me/916375878779"
+           target="_blank" rel="noopener">
+          संपर्क करें
+        </a>
+      </article>
+    </div>
+  </section>
+
+  <section id="yojana" style="margin-top:38px">
+    <h2 class="section-title">सरकारी योजनाएँ</h2>
+
+    <div class="grid">
+      <article class="card">
+        <div class="emoji">🏛️</div>
+        <h3>सरकारी योजनाएँ</h3>
+        <p>योजना की पात्रता, लाभ और जरूरी दस्तावेज़ देखें।</p>
+        <a class="btn" href="https://www.myscheme.gov.in/"
+           target="_blank" rel="noopener">
+          योजनाएँ देखें
+        </a>
+      </article>
+
+      <article class="card">
+        <div class="emoji">🤝</div>
+        <h3>योजना सहायता</h3>
+        <p>आवेदन संबंधी जानकारी के लिए WhatsApp करें।</p>
+        <a class="btn whatsapp"
+           href="https://wa.me/916375878779"
+           target="_blank" rel="noopener">
+          सहायता लें
+        </a>
+      </article>
+    </div>
+  </section>
+
+  <section id="igu" style="margin-top:38px">
+    <h2 class="section-title">IGU यूनिवर्सिटी</h2>
+
+    <div class="grid">
+      <article class="card">
+        <div class="emoji">🎓</div>
+        <h3>इंदिरा गांधी विश्वविद्यालय</h3>
+        <p>एडमिशन, परीक्षा और विश्वविद्यालय की सूचनाएँ देखें।</p>
+        <a class="btn" href="https://igu.ac.in/"
+           target="_blank" rel="noopener">
+          विश्वविद्यालय खोलें
+        </a>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact" style="margin-top:38px">
+    <div class="contact">
+      <h2 class="section-title">हमसे संपर्क करें</h2>
+
+      <p><strong>PARDEEP CSC</strong></p>
+      <p>मोबाइल: 6375878779</p>
+      <p>सेवाओं की जानकारी के लिए हमसे संपर्क करें।</p>
+
+      <p style="margin-top:18px">
+        <a class="btn whatsapp"
+           href="https://wa.me/916375878779"
+           target="_blank" rel="noopener">
+          WhatsApp पर संदेश भेजें
+        </a>
+      </p>
+
+      <p style="margin-top:12px">
+        <a class="btn" href="tel:+916375878779">
+          📞 कॉल करें
+        </a>
+      </p>
+    </div>
+  </section>
+
 </main>
+
 <footer>
-<strong>PARDEEP CSC</strong><br>
-आपकी सेवा में सदैव तत्पर<br>
-© 2026 PARDEEP CSC
+  <strong>PARDEEP CSC</strong>
+  <p>आपकी सेवा में सदैव तत्पर</p>
+  <p>सभी अधिकार सुरक्षित © 2026 PARDEEP CSC</p>
+  <p>सरकारी सेवाओं के लिए संबंधित आधिकारिक पोर्टल देखें।</p>
 </footer>
+
+<a class="btn whatsapp floating-wa"
+   href="https://wa.me/916375878779"
+   target="_blank" rel="noopener"
+   aria-label="WhatsApp पर संपर्क करें">
+  WhatsApp
+</a>
+
 </body>
 </html>
