@@ -3,490 +3,312 @@ HTML
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>PARDEEP CSC | सभी डिजिटल सेवाएँ</title>
-<meta name="description" content="PARDEEP CSC पर आधार, PAN, आयुष्मान कार्ड, राशन कार्ड, पासपोर्ट, सरकारी योजनाएँ और ऑनलाइन सेवाओं की जानकारी प्राप्त करें।">
-
-<style>
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: Arial, "Noto Sans Devanagari", sans-serif;
-  background: #f3f7fc;
-  color: #1c2c43;
-  line-height: 1.6;
-}
-
-header {
-  background: #103766;
-  color: white;
-  text-align: center;
-  padding: 25px 15px;
-}
-
-header h1 {
-  font-size: 32px;
-  letter-spacing: 1px;
-}
-
-header p {
-  margin-top: 5px;
-  font-size: 16px;
-}
-
-nav {
-  background: white;
-  display: flex;
-  gap: 20px;
-  padding: 14px;
-  overflow-x: auto;
-  white-space: nowrap;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  box-shadow: 0 2px 8px #00000012;
-}
-
-nav a {
-  color: #103766;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav a:hover {
-  color: #087dba;
-}
-
-.hero {
-  background: linear-gradient(125deg, #1259a5, #0aa5b9);
-  color: white;
-  padding: 48px 18px;
-  text-align: center;
-}
-
-.hero h2 {
-  font-size: 30px;
-  margin-bottom: 12px;
-}
-
-.hero p {
-  margin: 10px 0 22px;
-}
-
-.container {
-  width: 100%;
-  max-width: 1100px;
-  margin: auto;
-  padding: 28px 15px;
-}
-
-.section-title {
-  color: #103766;
-  text-align: center;
-  font-size: 25px;
-  margin-bottom: 22px;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(
-    auto-fit, minmax(210px, 1fr)
-  );
-  gap: 17px;
-}
-
-.card {
-  background: white;
-  border-radius: 15px;
-  padding: 22px 16px;
-  text-align: center;
-  box-shadow: 0 4px 15px #17395e12;
-  border: 1px solid #e7eef7;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.emoji {
-  font-size: 42px;
-  margin-bottom: 8px;
-}
-
-.card h3 {
-  color: #103766;
-  font-size: 18px;
-  margin-bottom: 8px;
-}
-
-.card p {
-  font-size: 14px;
-  color: #4a596d;
-  margin-bottom: 17px;
-  flex-grow: 1;
-}
-
-.btn {
-  display: inline-block;
-  background: #1268bb;
-  color: white;
-  padding: 10px 16px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
-  font-size: 14px;
-}
-
-.btn:hover {
-  background: #0d4e91;
-}
-
-.whatsapp {
-  background: #087e45;
-}
-
-.whatsapp:hover {
-  background: #066638;
-}
-
-.hero .btn {
-  padding: 12px 20px;
-  font-size: 16px;
-}
-
-.notice {
-  background: #e8f3ff;
-  border-left: 4px solid #1268bb;
-  padding: 15px;
-  border-radius: 8px;
-  margin-bottom: 22px;
-  font-size: 14px;
-}
-
-.contact {
-  background: white;
-  border-radius: 15px;
-  text-align: center;
-  padding: 28px 16px;
-  box-shadow: 0 4px 15px #17395e12;
-}
-
-.contact p {
-  margin: 9px 0;
-}
-
-footer {
-  background: #103766;
-  color: white;
-  text-align: center;
-  padding: 24px 15px;
-  margin-top: 15px;
-  font-size: 14px;
-}
-
-footer a {
-  color: white;
-}
-
-.floating-wa {
-  position: fixed;
-  right: 16px;
-  bottom: 18px;
-  z-index: 20;
-  border-radius: 50px;
-  padding: 13px 16px;
-  box-shadow: 0 4px 12px #0003;
-}
-
-@media (max-width: 480px) {
-  header h1 {
-    font-size: 27px;
-  }
-
-  .hero h2 {
-    font-size: 25px;
-  }
-
-  .grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 11px;
-  }
-
-  .card {
-    padding: 17px 10px;
-  }
-
-  .card h3 {
-    font-size: 16px;
-  }
-
-  .card p {
-    font-size: 13px;
-  }
-
-  .card .btn {
-    padding: 9px 10px;
-    font-size: 13px;
-  }
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b4da2">
+  <meta name="description" content="PARDEEP CSC - Haryana and All India Government Job Apply Online, Form Print, Offline Forms and CSC Services.">
+  <title>PARDEEP CSC | Government Job Forms</title>
+  <style>
+    :root {
+      --blue: #0b4da2;
+      --dark: #08336b;
+      --light: #edf5ff;
+      --green: #168447;
+      --text: #172b4d;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: var(--text);
+      background: #f5f8fc;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #08336b, #1475d4);
+      color: white;
+      padding: 25px 15px;
+      text-align: center;
+    }
+    header h1 { margin: 0; font-size: 29px; }
+    header p { margin: 7px 0 0; }
+    nav {
+      background: white;
+      display: flex;
+      gap: 8px;
+      padding: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      box-shadow: 0 2px 8px #0001;
+    }
+    nav a {
+      color: var(--blue);
+      text-decoration: none;
+      font-weight: bold;
+      padding: 6px 9px;
+    }
+    .hero {
+      background: var(--light);
+      padding: 25px 15px;
+      text-align: center;
+    }
+    .hero h2 { color: var(--dark); margin: 0 0 8px; }
+    .container { max-width: 1050px; margin: auto; padding: 18px 14px; }
+    .section-title { color: var(--dark); margin: 10px 0 16px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 15px;
+    }
+    .card {
+      background: white;
+      border-radius: 14px;
+      padding: 18px;
+      border: 1px solid #e0e8f3;
+      box-shadow: 0 4px 14px #18385c0c;
+    }
+    .card h3 { margin-top: 0; color: var(--dark); }
+    .card p { font-size: 14px; }
+    .btn {
+      display: inline-block;
+      text-align: center;
+      text-decoration: none;
+      border: 0;
+      border-radius: 8px;
+      padding: 10px 13px;
+      margin: 4px 3px 4px 0;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      background: var(--blue);
+      color: white;
+    }
+    .btn.green { background: var(--green); }
+    .btn.light { background: #e6f0ff; color: var(--dark); }
+    .btn.gray { background: #596579; color: white; }
+    .btn:hover { opacity: .88; }
+    .notice {
+      background: #fff8df;
+      border-left: 4px solid #e3a008;
+      padding: 12px;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    input[type="file"] {
+      display: block;
+      width: 100%;
+      margin: 12px 0;
+      padding: 10px;
+      border: 1px solid #ccd7e6;
+      border-radius: 8px;
+      background: white;
+    }
+    .service-list { padding-left: 20px; }
+    footer {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 22px 12px;
+      margin-top: 20px;
+    }
+    footer a { color: white; }
+    @media (max-width: 480px) {
+      header h1 { font-size: 25px; }
+      .container { padding: 13px 10px; }
+      .btn { font-size: 13px; }
+    }
+    @media print {
+      body * { visibility: hidden; }
+      #printArea, #printArea * { visibility: visible; }
+      #printArea {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background: white;
+      }
+    }
+  </style>
 </head>
-
 <body>
 
 <header>
   <h1>PARDEEP CSC</h1>
-  <p>आपकी डिजिटल सेवाओं का विश्वसनीय केंद्र</p>
+  <p>आपकी डिजिटल सेवा, हमारी जिम्मेदारी</p>
+  <p>Government Jobs | Online Forms | Print Services</p>
 </header>
 
 <nav>
-  <a href="#services">हमारी सेवाएँ</a>
-  <a href="#cards">सरकारी कार्ड</a>
-  <a href="#jobs">सरकारी नौकरी</a>
-  <a href="#yojana">सरकारी योजनाएँ</a>
-  <a href="#igu">IGU यूनिवर्सिटी</a>
-  <a href="#contact">संपर्क करें</a>
+  <a href="#home">Home</a>
+  <a href="#jobs">Government Jobs</a>
+  <a href="#print">Form Print</a>
+  <a href="#offline">Offline Forms</a>
+  <a href="#services">CSC Services</a>
+  <a href="#contact">Contact</a>
 </nav>
 
-<section class="hero">
-  <h2>सभी ऑनलाइन सेवाएँ, एक ही जगह!</h2>
-  <p>
-    आधार • PAN • आयुष्मान • राशन कार्ड • पासपोर्ट
-    <br>
-    सरकारी फॉर्म • योजनाएँ • डिजिटल सेवाएँ
-  </p>
-
-  <a class="btn whatsapp"
-     href="https://wa.me/916375878779"
-     target="_blank"
-     rel="noopener">
-    WhatsApp पर संपर्क करें
-  </a>
+<section class="hero" id="home">
+  <h2>सरकारी नौकरी फॉर्म सेवा</h2>
+  <p>हरियाणा और पूरे भारत की सरकारी भर्ती के आधिकारिक पोर्टल एक जगह।</p>
+  <a class="btn" href="#jobs">Apply Online</a>
+  <a class="btn green" href="#print">Applied Form Print</a>
 </section>
 
-<main class="container" id="services">
-
-  <div class="notice">
-    <strong>जरूरी सूचना:</strong>
-    नीचे दिए गए बटन संबंधित आधिकारिक वेबसाइटों पर ले जाते हैं।
-    आवेदन, पात्रता और फीस की जानकारी संबंधित पोर्टल पर जाँचें।
-  </div>
-
-  <section id="cards">
-    <h2 class="section-title">सरकारी कार्ड एवं दस्तावेज़</h2>
-
+<main class="container">
+  <section id="jobs">
+    <h2 class="section-title">🏛️ Government Job Apply Online</h2>
     <div class="grid">
 
       <article class="card">
-        <div class="emoji">🪪</div>
-        <h3>आधार कार्ड</h3>
-        <p>आधार संबंधी सेवाएँ, अपडेट और आधिकारिक जानकारी।</p>
-        <a class="btn" href="https://uidai.gov.in/"
-           target="_blank" rel="noopener">
-          आधार सेवाएँ
-        </a>
+        <h3>हरियाणा सरकारी नौकरियाँ</h3>
+        <p>HSSC भर्ती, विज्ञापन और उपलब्ध ऑनलाइन आवेदन देखें।</p>
+        <a class="btn" href="https://www.hssc.gov.in/" target="_blank" rel="noopener">HSSC Website</a>
+        <a class="btn green" href="https://hssc.gov.in/applyOnline" target="_blank" rel="noopener">Apply Online</a>
+        <a class="btn light" href="https://hssc.gov.in/advertisement" target="_blank" rel="noopener">Notifications</a>
       </article>
 
       <article class="card">
-        <div class="emoji">📄</div>
-        <h3>PAN कार्ड</h3>
-        <p>PAN आवेदन, सुधार और आयकर विभाग की सेवाएँ।</p>
-        <a class="btn"
-           href="https://www.incometax.gov.in/iec/foportal/"
-           target="_blank" rel="noopener">
-          PAN जानकारी
-        </a>
+        <h3>Haryana Public Service Commission</h3>
+        <p>HPSC की भर्ती, विज्ञापन और आवेदन संबंधी सूचना।</p>
+        <a class="btn" href="https://hpsc.gov.in/" target="_blank" rel="noopener">HPSC Website</a>
       </article>
 
       <article class="card">
-        <div class="emoji">🏥</div>
-        <h3>आयुष्मान कार्ड</h3>
-        <p>आयुष्मान भारत योजना और लाभार्थी पोर्टल की जानकारी।</p>
-        <a class="btn"
-           href="https://beneficiary.nha.gov.in/"
-           target="_blank" rel="noopener">
-          लाभार्थी पोर्टल
-        </a>
+        <h3>UPSC</h3>
+        <p>केंद्रीय सरकारी परीक्षाएँ और भर्ती आवेदन।</p>
+        <a class="btn" href="https://www.upsc.gov.in/" target="_blank" rel="noopener">Recruitment</a>
+        <a class="btn green" href="https://upsconline.nic.in/" target="_blank" rel="noopener">Apply Online</a>
       </article>
 
       <article class="card">
-        <div class="emoji">🌾</div>
-        <h3>राशन कार्ड</h3>
-        <p>हरियाणा में राशन और खाद्य आपूर्ति सेवाओं की जानकारी।</p>
-        <a class="btn"
-           href="https://epds.haryanafood.gov.in/"
-           target="_blank" rel="noopener">
-          राशन सेवाएँ
-        </a>
+        <h3>SSC</h3>
+        <p>कर्मचारी चयन आयोग की भर्ती और आवेदन के लिए।</p>
+        <a class="btn" href="https://ssc.gov.in/" target="_blank" rel="noopener">SSC Website</a>
       </article>
 
       <article class="card">
-        <div class="emoji">🛂</div>
-        <h3>पासपोर्ट</h3>
-        <p>पासपोर्ट आवेदन, अपॉइंटमेंट और आधिकारिक जानकारी।</p>
-        <a class="btn"
-           href="https://www.passportindia.gov.in/"
-           target="_blank" rel="noopener">
-          पासपोर्ट सेवा
-        </a>
+        <h3>Indian Railways / RRB</h3>
+        <p>रेलवे भर्ती बोर्ड की आधिकारिक सूचनाएँ और आवेदन।</p>
+        <a class="btn" href="https://www.rrbcdg.gov.in/" target="_blank" rel="noopener">RRB Chandigarh</a>
+        <a class="btn light" href="https://indianrailways.gov.in/" target="_blank" rel="noopener">Railways Website</a>
       </article>
 
       <article class="card">
-        <div class="emoji">👴</div>
-        <h3>सीनियर सिटीजन सेवाएँ</h3>
-        <p>वरिष्ठ नागरिकों की योजनाओं और प्रमाणपत्र संबंधी जानकारी।</p>
-        <a class="btn"
-           href="https://socialjusticehry.gov.in/"
-           target="_blank" rel="noopener">
-          हरियाणा सेवाएँ
-        </a>
+        <h3>Bank Jobs - IBPS</h3>
+        <p>बैंक भर्ती, नोटिफिकेशन और उपलब्ध आवेदन।</p>
+        <a class="btn" href="https://www.ibps.in/" target="_blank" rel="noopener">IBPS Website</a>
       </article>
 
       <article class="card">
-        <div class="emoji">📃</div>
-        <h3>जन्म एवं मृत्यु प्रमाणपत्र</h3>
-        <p>प्रमाणपत्र और संबंधित सरकारी सेवाओं की जानकारी।</p>
-        <a class="btn"
-           href="https://services.india.gov.in/"
-           target="_blank" rel="noopener">
-          सरकारी सेवाएँ
-        </a>
+        <h3>National Career Service</h3>
+        <p>नौकरी के अवसर और सरकारी भर्ती पोर्टल के लिंक।</p>
+        <a class="btn" href="https://www.ncs.gov.in/pages/govt-job-vacancies.aspx" target="_blank" rel="noopener">Government Jobs</a>
       </article>
 
       <article class="card">
-        <div class="emoji">📷</div>
-        <h3>फोटो एवं फॉर्म</h3>
-        <p>फोटो, प्रिंटिंग, ऑनलाइन फॉर्म और डिजिटल सहायता।</p>
-        <a class="btn whatsapp"
-           href="https://wa.me/916375878779"
-           target="_blank" rel="noopener">
-          जानकारी लें
-        </a>
+        <h3>भारत सरकार - Jobs</h3>
+        <p>राष्ट्रीय पोर्टल पर रोजगार संबंधी जानकारी।</p>
+        <a class="btn" href="https://www.india.gov.in/category/jobs" target="_blank" rel="noopener">View Job Information</a>
       </article>
 
     </div>
+    <p class="notice">ध्यान दें: आवेदन करने से पहले आधिकारिक नोटिफिकेशन में अंतिम तारीख, आयु सीमा, योग्यता और फीस जरूर जाँचें। हर पोर्टल पर हर समय आवेदन खुले नहीं होते।</p>
   </section>
 
-  <section id="jobs" style="margin-top:38px">
-    <h2 class="section-title">सरकारी नौकरी</h2>
+  <section id="print">
+    <h2 class="section-title">🖨️ Applied Form Print</h2>
+    <div class="card">
+      <h3>भरे हुए फॉर्म की PDF प्रिंट करें</h3>
+      <p>सरकारी पोर्टल से डाउनलोड की गई आवेदन की PDF चुनें। फाइल आपके ब्राउज़र में खुलेगी, जहाँ से Print कर सकते हैं।</p>
+      <label for="formFile"><strong>अपनी Applied Form PDF चुनें:</strong></label>
+      <input type="file" id="formFile" accept="application/pdf">
+      <button class="btn green" type="button" onclick="openFormPDF()">Open / Print Applied Form</button>
+      <button class="btn gray" type="button" onclick="window.print()">Print This Page</button>
+      <p class="notice">PDF फाइल चुनने पर वह आपके डिवाइस पर ही खुलेगी। यह वेबसाइट आपका आवेदन सरकारी पोर्टल से अपने आप नहीं निकाल सकती। प्रिंट से पहले सही फॉर्म जाँचें।</p>
+    </div>
+  </section>
 
+  <section id="offline">
+    <h2 class="section-title">📄 Offline Form Download</h2>
     <div class="grid">
       <article class="card">
-        <div class="emoji">💼</div>
-        <h3>हरियाणा भर्ती</h3>
-        <p>सरकारी भर्ती और आधिकारिक नोटिफिकेशन देखें।</p>
-        <a class="btn" href="https://www.hssc.gov.in/"
-           target="_blank" rel="noopener">
-          भर्ती देखें
-        </a>
+        <h3>हरियाणा भर्ती फॉर्म</h3>
+        <p>भर्ती के विज्ञापन और उपलब्ध डाउनलोड देखें।</p>
+        <a class="btn" href="https://hssc.gov.in/advertisement" target="_blank" rel="noopener">Form / Notice देखें</a>
       </article>
-
       <article class="card">
-        <div class="emoji">📝</div>
-        <h3>ऑनलाइन आवेदन सहायता</h3>
-        <p>आवेदन और दस्तावेज़ संबंधी सहायता के लिए संपर्क करें।</p>
-        <a class="btn whatsapp"
-           href="https://wa.me/916375878779"
-           target="_blank" rel="noopener">
-          संपर्क करें
-        </a>
+        <h3>UPSC Forms & Downloads</h3>
+        <p>UPSC के उपलब्ध फॉर्म और भर्ती निर्देश।</p>
+        <a class="btn" href="https://www.upsc.gov.in/" target="_blank" rel="noopener">Official Website</a>
       </article>
+      <article class="card">
+        <h3>अन्य सरकारी भर्ती फॉर्म</h3>
+        <p>विभाग के आधिकारिक पोर्टल पर डाउनलोड उपलब्धता जाँचें।</p>
+        <a class="btn" href="https://www.ncs.gov.in/pages/govt-job-vacancies.aspx" target="_blank" rel="noopener">Recruitment Links</a>
+      </article>
+    </div>
+    <p class="notice">ऑफलाइन फॉर्म तभी डाउनलोड होगा जब संबंधित विभाग उसे उपलब्ध कराएगा। कई भर्तियों में आवेदन केवल ऑनलाइन स्वीकार होते हैं।</p>
+  </section>
+
+  <section id="services">
+    <h2 class="section-title">💻 हमारी CSC सेवाएँ</h2>
+    <div class="card">
+      <ul class="service-list">
+        <li>Aadhaar संबंधी उपलब्ध सेवाएँ</li>
+        <li>PAN Card आवेदन सहायता</li>
+        <li>Ayushman Card संबंधी सहायता</li>
+        <li>Ration Card संबंधी सहायता</li>
+        <li>Passport आवेदन सहायता</li>
+        <li>Senior Citizen Card संबंधी सहायता</li>
+        <li>Government Job Form भरने में सहायता</li>
+        <li>Applied Form और दस्तावेजों की Print</li>
+      </ul>
+      <p class="notice">सेवाएँ संबंधित सरकारी नियमों और पोर्टल की उपलब्धता के अनुसार प्रदान की जाती हैं।</p>
     </div>
   </section>
 
-  <section id="yojana" style="margin-top:38px">
-    <h2 class="section-title">सरकारी योजनाएँ</h2>
-
-    <div class="grid">
-      <article class="card">
-        <div class="emoji">🏛️</div>
-        <h3>सरकारी योजनाएँ</h3>
-        <p>योजना की पात्रता, लाभ और जरूरी दस्तावेज़ देखें।</p>
-        <a class="btn" href="https://www.myscheme.gov.in/"
-           target="_blank" rel="noopener">
-          योजनाएँ देखें
-        </a>
-      </article>
-
-      <article class="card">
-        <div class="emoji">🤝</div>
-        <h3>योजना सहायता</h3>
-        <p>आवेदन संबंधी जानकारी के लिए WhatsApp करें।</p>
-        <a class="btn whatsapp"
-           href="https://wa.me/916375878779"
-           target="_blank" rel="noopener">
-          सहायता लें
-        </a>
-      </article>
+  <section id="contact">
+    <h2 class="section-title">📞 Contact PARDEEP CSC</h2>
+    <div class="card">
+      <p><strong>फोन / WhatsApp:</strong> 6375878779</p>
+      <p>फॉर्म भरवाने या प्रिंट की जानकारी के लिए WhatsApp करें।</p>
+      <a class="btn green" href="https://wa.me/916375878779?text=Namaste%20PARDEEP%20CSC%2C%20mujhe%20government%20job%20form%20ki%20jankari%20chahiye." target="_blank" rel="noopener">WhatsApp पर संपर्क करें</a>
     </div>
   </section>
-
-  <section id="igu" style="margin-top:38px">
-    <h2 class="section-title">IGU यूनिवर्सिटी</h2>
-
-    <div class="grid">
-      <article class="card">
-        <div class="emoji">🎓</div>
-        <h3>इंदिरा गांधी विश्वविद्यालय</h3>
-        <p>एडमिशन, परीक्षा और विश्वविद्यालय की सूचनाएँ देखें।</p>
-        <a class="btn" href="https://igu.ac.in/"
-           target="_blank" rel="noopener">
-          विश्वविद्यालय खोलें
-        </a>
-      </article>
-    </div>
-  </section>
-
-  <section id="contact" style="margin-top:38px">
-    <div class="contact">
-      <h2 class="section-title">हमसे संपर्क करें</h2>
-
-      <p><strong>PARDEEP CSC</strong></p>
-      <p>मोबाइल: 6375878779</p>
-      <p>सेवाओं की जानकारी के लिए हमसे संपर्क करें।</p>
-
-      <p style="margin-top:18px">
-        <a class="btn whatsapp"
-           href="https://wa.me/916375878779"
-           target="_blank" rel="noopener">
-          WhatsApp पर संदेश भेजें
-        </a>
-      </p>
-
-      <p style="margin-top:12px">
-        <a class="btn" href="tel:+916375878779">
-          📞 कॉल करें
-        </a>
-      </p>
-    </div>
-  </section>
-
 </main>
 
 <footer>
-  <strong>PARDEEP CSC</strong>
-  <p>आपकी सेवा में सदैव तत्पर</p>
-  <p>सभी अधिकार सुरक्षित © 2026 PARDEEP CSC</p>
-  <p>सरकारी सेवाओं के लिए संबंधित आधिकारिक पोर्टल देखें।</p>
+  <p><strong>PARDEEP CSC</strong></p>
+  <p>Government Job Forms & Digital Services</p>
+  <p>सभी आवेदन संबंधित आधिकारिक पोर्टल पर किए जाते हैं।</p>
+  <p>© <span id="year"></span> PARDEEP CSC</p>
 </footer>
 
-<a class="btn whatsapp floating-wa"
-   href="https://wa.me/916375878779"
-   target="_blank" rel="noopener"
-   aria-label="WhatsApp पर संपर्क करें">
-  WhatsApp
-</a>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  function openFormPDF() {
+    const input = document.getElementById("formFile");
+    const file = input.files && input.files[0];
+
+    if (!file) {
+      alert("कृपया पहले अपने Applied Form की PDF चुनें।");
+      return;
+    }
+
+    if (file.type !== "application/pdf") {
+      alert("कृपया PDF फाइल चुनें।");
+      return;
+    }
+
+    const fileURL = URL.createObjectURL(file);
+    const newWindow = window.open(fileURL, "_blank");
+
+    if (!newWindow) {
+      alert("ब्राउज़र ने नया पेज रोका है। Pop-ups की अनुमति दें और दोबारा कोशिश करें।");
+    }
+  }
+</script>
 
 </body>
 </html>
